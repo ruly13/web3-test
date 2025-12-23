@@ -18,8 +18,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <meta charSet="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        {/* Google Fonts: Inter */}
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossOrigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        {/* Material Symbols */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={inter.className} suppressHydrationWarning>
         <Providers>
           {children}
         </Providers>

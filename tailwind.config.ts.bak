@@ -1,0 +1,25 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#3713ec",        // Brand Purple
+        "background-light": "#f6f6f8",
+        "background-dark": "#131022", // Main Background (Deepest Dark)
+        "card-dark": "#1e1c29",       // Cards/Panels
+        "border-dark": "#2b2839",     // Borders
+        "success": "#0bda6c",         // Green
+        "danger": "#fa6938",          // Red/Orange
+        "text-muted": "#a19db9"       // Grey/Purple Text
+      },
+      fontFamily: { "display": ["Inter", "sans-serif"] },
+      boxShadow: { 'glow': '0 0 15px rgba(55,19,236,0.3)' }
+    },
+  },
+  plugins: [],
+};
+
+export default config;
